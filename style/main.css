@@ -1,0 +1,114 @@
+:root{
+    --vermelho:#e50914f8;
+    --preto:#131313;
+}
+
+
+/**reset de style**/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**elemento base**/
+
+body{
+    background: var(--preto);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between; /**cria espaço entre as duas tags do container**/
+}
+
+header .logo{
+    margin-left: 9px;
+    margin-bottom: 2px;
+    color: var(--vermelho);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/**filme principal**/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-friends.jpg');
+    height:550px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 12px;
+}
+
+.filme-principal .titulo{
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 20%;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 16px 32px;
+    border-radius: 5%;
+    margin-right: 15px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 25px;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
